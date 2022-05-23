@@ -4,7 +4,7 @@ import {useEffect, useState} from 'react';
 
 
 function Banner() {
-    const title = 'Eole-Project'
+    const title = 'Eole-Project Platforme'
     const [initialState, setInitialState] = useState([])
 
     useEffect(()=>{
