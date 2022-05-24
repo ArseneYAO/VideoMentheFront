@@ -1,7 +1,8 @@
 import Banner from './Banner'
+import Service from './Service'
 
 function App() {
-    return <Banner />
+    return <div><Banner /><Service /></div>
 }
 
 export default App
