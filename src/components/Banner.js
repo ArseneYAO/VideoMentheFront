@@ -6,9 +6,10 @@ import {useEffect, useState} from 'react';
 function Banner() {
     const title = 'Eole-Project Platforme'
     const [initialState, setInitialState] = useState([])
+    const root = 'http://localhost:4000'
 
     useEffect(()=>{
-        fetch('/api/').then(res => {
+        fetch(root).then(res => {
             if(res.ok){
                 return res.json()
             }
@@ -20,7 +21,7 @@ function Banner() {
     
     const [msg,setMsg] = useState('')
     const handleClick = async () => {
-        const data = await fetch('/api/videos')
+        const data = await fetch(root)
         const json = await data.json()
         const msg = json.msg
 
